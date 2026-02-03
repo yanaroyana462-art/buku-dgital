@@ -1,0 +1,107 @@
+:root {
+    --primary-dark: #2c3e50;
+    --accent-blue: #2980b9;
+    --bg-body: #ecf0f1;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--bg-body);
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 { 
+    text-align: center; 
+    color: var(--primary-dark); 
+    margin-bottom: 25px; 
+}
+
+.input-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+select, input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px; /* Ukuran font lebih mudah dibaca */
+}
+
+.filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 14px; /* Ukuran font lebih konsisten */
+}
+
+.btn-filter { 
+    background-color: #bdc3c7; 
+    color: #333; 
+}
+.btn-filter:hover { 
+    background-color: #95a5a6; 
+    color: white; 
+}
+.btn-active { 
+    background-color: var(--accent-blue) !important; 
+    color: white; 
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-top: 15px;
+    border: 1px solid #eee;
+    border-left: 5px solid var(--primary-dark);
+    border-radius: 4px;
+    position: relative;
+}
+
+.btn-hapus {
+    background: #e74c3c;
+    color: white;
+    padding: 5px 10px; /* Sedikit lebih besar agar mudah diklik */
+    font-size: 12px;
+    float: right;
+}
+
+.tag {
+    font-size: 12px;
+    background: #eee;
+    padding: 3px 10px;
+    border-radius: 12px;
+    color: #7f8c8d;
+    margin-right: 5px;
+    text-transform: capitalize;
+    display: inline-block; /* Mencegah tag pecah baris */
+    margin-bottom: 5px;
+}

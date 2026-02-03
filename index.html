@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Digital Kenegaraan</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Buku Digital Kenegaraan</h1>
+
+    <div class="input-section">
+        <label for="selectSistem">Pilih Sistem Negara:</label>
+        <select id="selectSistem">
+            <option value="Semua">Tampilkan Semua Negara</option>
+            <option value="Khilafah">Khilafah</option>
+            <option value="Demokrasi">Demokrasi</option>
+            <option value="Komunis">Komunis</option>
+            <option value="Kerajaan">Kerajaan</option>
+        </select>
+    </div>
+
+    <div class="filter-section">
+        <button class="btn-filter btn-active" data-tipe="semua">Semua Kategori</button>
+        <button class="btn-filter" data-tipe="definisi">Definisi</button>
+        <button class="btn-filter" data-tipe="tokoh">Tokoh</button>
+        <button class="btn-filter" data-tipe="sejarah">Sejarah</button>
+        <button class="btn-filter" data-tipe="struktur">Struktur</button>
+    </div>
+
+    <div id="daftarKonten"></div>
+</div>
+
+<!-- Memuat file data terlebih dahulu, dan menggunakan type="module" -->
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
